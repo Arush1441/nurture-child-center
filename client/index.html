@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home | Apple Tree Seeds</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Apple Tree Seeds</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="focus-areas">
+      <h2>Our Focus Areas</h2>
+      <div class="focus-grid">
+        <div class="focus-box" onclick="openModal('earlyInterventionModal')">
+          <h3>Early Intervention</h3>
+        </div>
+        <div class="focus-box" onclick="openModal('behavioralSupportModal')">
+          <h3>Behavioral Support</h3>
+        </div>
+        <div class="focus-box" onclick="openModal('speechTherapyModal')">
+          <h3>Speech Therapy</h3>
+        </div>
+        <div class="focus-box" onclick="openModal('occupationalTherapyModal')">
+          <h3>Occupational Therapy</h3>
+        </div>
+      </div>
+    </section>
+    <section class="about-us">
+  <h2>About Us</h2>
+  <p>
+    At Apple Tree Seeds, we are dedicated to nurturing young minds through
+    early intervention and specialized support services. Our mission is to
+    empower children with the tools they need to thrive—emotionally,
+    physically, and socially. With a team of passionate therapists and
+    educators, we create individualized programs to foster growth,
+    confidence, and lifelong learning.
+  </p>
+</section>
+<section class="contact-info">
+  <h2>Contact</h2>
+  <p>
+    We'd love to hear from you! Whether you're a parent looking for support, a therapist seeking collaboration, or someone with questions about our services, don't hesitate to reach out. You can contact us via email at <a href="mailto:info@appletreeseeds.org">info@appletreeseeds.org</a> or call us at <strong>(123) 456-7890</strong>. Let’s grow together!
+  </p>
+</section>
+
+<section class="image-highlight">
+  <h2>Our Environment</h2>
+  <img src="images/our-environment.jpg" alt="Therapists working with children in a playful setting" />
+  <p>
+    We create a warm, welcoming, and sensory-friendly environment where children can learn, play, and grow. Our spaces are designed to encourage exploration, comfort, and development through guided interaction.
+  </p>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <!-- Gallery images go here -->
+</section>
+
+
+  </main>
+
+  <!-- Modals -->
+  <div id="earlyInterventionModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('earlyInterventionModal')">&times;</span>
+      <h2>Early Intervention</h2>
+      <p>Early intervention is crucial for children with developmental delays or disabilities. By identifying and addressing challenges early on, we can provide targeted support that helps children develop essential skills. Our approach ensures children receive the necessary therapies to enhance their cognitive, physical, and emotional growth during their formative years.</p>
+    </div>
+  </div>
+
+  <div id="behavioralSupportModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('behavioralSupportModal')">&times;</span>
+      <h2>Behavioral Support</h2>
+      <p>Behavioral support is designed to help children with behavioral challenges, particularly those associated with autism or developmental disorders. Through a combination of behavioral analysis, structured interventions, and family support, we work to improve social skills, reduce disruptive behaviors, and foster positive interactions. Our goal is to build self-confidence and independence.</p>
+    </div>
+  </div>
+
+  <div id="speechTherapyModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('speechTherapyModal')">&times;</span>
+      <h2>Speech Therapy</h2>
+      <p>Speech therapy plays a vital role in helping children develop effective communication skills. Whether addressing speech delays, articulation problems, or language comprehension, our therapists use individualized techniques to improve both verbal and non-verbal communication. This enhances a child’s ability to express themselves, interact with peers, and succeed academically.</p>
+    </div>
+  </div>
+
+  <div id="occupationalTherapyModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('occupationalTherapyModal')">&times;</span>
+      <h2>Occupational Therapy</h2>
+      <p>Occupational therapy focuses on developing the skills needed for everyday activities. For children with disabilities or developmental delays, tasks such as writing, dressing, or using utensils can be challenging. Our therapists help children improve motor skills, sensory processing, and fine motor coordination, allowing them to gain independence and perform daily tasks with confidence.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Apple Tree Seeds. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

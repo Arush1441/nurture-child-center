@@ -1,0 +1,137 @@
+/* General Styling (reuse across pages) */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background: #4CAF50;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Services Grid Styling */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-box {
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.service-box:hover {
+  background-color: #e8f5e9;
+  border-color: #4CAF50;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+  transform: translateY(-5px);
+}
+
+.service-box h2 {
+  margin-top: 0;
+  color: #2e7d32;
+}
+.accordion-btn {
+  background-color: #f1f1f1;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion-btn:hover, .active {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+
+.services-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.services-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-box {
+  width: 45%;
+  min-width: 280px;
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+.service-header {
+  background-color: #f7f7f7;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.service-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 20px;
+}
+
+.service-box.active .service-content {
+  max-height: 300px; /* enough to show full text */
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .service-box {
+    width: 100%;
+  }
+}

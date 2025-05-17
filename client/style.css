@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f9f9f9;
+  }
+  
+  header, footer {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 2em;
+  }
+  
+  .hero {
+    background: #e0f7fa;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  footer {
+    margin-top: 2em;
+  }
+  
+
+  /* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1.5em;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Sections */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+h2 {
+  font-size: 2.2em;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.6em;
+  color: #4CAF50;
+}
+
+p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Our Story Section */
+.our-story {
+  background-color: #e8f5e9;
+  padding: 4rem 0;
+  text-align: center;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.our-story p {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Our Mission Section */
+.our-mission {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.our-mission p {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Our Values Section */
+.our-values {
+  background-color: #f4f4f4;
+  padding: 4rem 0;
+  text-align: center;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.value-item {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.value-item h3 {
+  margin-bottom: 1rem;
+}
+
+/* Meet the Team Section */
+.meet-the-team {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.team-member h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .values-grid, .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    width: 90%;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Services | Apple Tree Seeds</title>
+  <link rel="stylesheet" href="sansstyle.css" />
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="services-grid">
+      <div class="service-box">
+        <h2>Early Intervention</h2>
+        <p>Programs for young children showing developmental delays.</p>
+      </div>
+      <div class="service-box">
+        <h2>Speech & Language Therapy</h2>
+        <p>Helping children improve communication skills.</p>
+      </div>
+      <div class="service-box">
+        <h2>ABA Therapy</h2>
+        <p>Behavior-based support plans for children with autism.</p>
+      </div>
+      <div class="service-box">
+        <h2>Occupational Therapy</h2>
+        <p>Developing motor, sensory, and daily living skills.</p>
+      </div>
+      <div class="service-box">
+        <h2>Special Education</h2>
+        <p>Individualized academic support by trained educators.</p>
+      </div>
+      <div class="service-box">
+        <h2>Vocational Training</h2>
+        <p>Job-readiness skills for teens and young adults.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Apple Tree Seeds. All rights reserved.</p>
+  </footer>
+  <script>
+  document.querySelectorAll('.service-box').forEach(box => {
+    box.addEventListener('click', () => {
+      box.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
